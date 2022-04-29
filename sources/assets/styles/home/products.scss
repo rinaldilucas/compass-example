@@ -1,0 +1,91 @@
+@import "../core/props.scss";
+@import "../core/mixins";
+@import "compass/css3";
+
+.products {
+    background-color: $background-color;
+    color: $primary-color-text;
+    text-align: center;
+    margin: 2em 0;
+
+    &__title {
+        font-size: 2em;
+        margin: 1em 0 0.4em 0;
+    }
+
+    &__text {
+        padding: 0 1em 0 1em;
+        font-size: 1em;
+        font-weight: 100;
+
+        @include mq("tablet-wide") {
+            padding: 0;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        place-content: center;
+    }
+
+    &__box {
+        padding: 2em 1em 0em 1em;
+        color: $primary-color-text;
+
+        img {
+            height: 8em;
+            width: 8em;
+            background-color: $navbar-color;
+            padding: 1em;
+        }
+
+        &-title {
+            color: $secondary-color-text;
+            font-size: 1.4em;
+            font-weight: 600;
+
+            @include mq("tablet-wide") {
+                font-size: 1.2em;
+            }
+        }
+
+        &-description {
+            font-family: Roboto Light;
+            font-weight: 100;
+            font-size: 1em;
+
+            @include mq("tablet-wide") {
+                font-size: 0.75em;
+            }
+        }
+    }
+
+    &__button-wrapper {
+        margin: 1.5em auto 0;
+        width: 15em;
+        display: block;
+        justify-content: space-around;
+        flex-direction: column;
+
+        @include mq("tablet-wide") {
+            display: flex;
+        }
+    }
+
+    &__button {
+        margin: 0 auto 0.5em;
+        @extend .button !optional;
+    }
+
+    &__text {
+        p {
+            font-size: 0.9em;
+
+            @include mq("tablet-wide") {
+                font-size: 0.8em;
+            }
+        }
+    }
+}

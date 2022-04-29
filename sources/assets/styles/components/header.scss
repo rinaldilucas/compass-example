@@ -1,0 +1,128 @@
+@import "../core/props.scss";
+@import "../core/base.scss";
+
+.header {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    padding: 0.5em 0;
+    display: flex;
+    align-content: center;
+
+    &__wrapper {
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border-radius: 4em;
+        width: 85em;
+        margin: auto;
+
+        @include mq("tablet-wide") {
+            background: $menu-background;
+        }
+    }
+
+    &__logo {
+        color: $menu-background;
+
+        @include mq("tablet-wide") {
+            color: $accent-color-text;
+            margin-left: 4rem;
+        }
+
+        &-text {
+            font-family: "Beautiful Heart";
+            font-size: 2.4em;
+            padding-left: 1.1em;
+
+            @include mq("tablet-wide") {
+                padding-left: 0;
+                font-size: 2em;
+            }
+        }
+    }
+
+    &__menu {
+        font-size: 1em;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        list-style-type: none;
+        display: flex;
+        margin-left: auto;
+        flex-direction: column;
+
+        @include mq("tablet-wide") {
+            font-size: 1em;
+            justify-content: flex-end;
+            flex-direction: row;
+            margin-right: 2em;
+        }
+    }
+
+    &__nav {
+        height: 100%;
+        width: 90%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -90%;
+        transition: left 0.3s ease-out;
+        background: $menu-background;
+
+        @include mq("tablet-wide") {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0.4em 0;
+            position: unset;
+            max-width: unset;
+            text-align: right;
+            background-color: transparent;
+        }
+
+        &-link {
+            display: block;
+            padding-right: 1em;
+            margin-right: 1em;
+            line-height: 1;
+            text-decoration: none;
+            font-size: 1em;
+            transition: 0.3s;
+            color: $background-color;
+            padding: 1em 0;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .active-menu & {
+            left: 0;
+        }
+    }
+
+    &__button {
+        background: none;
+        border: 0;
+        outline: 0;
+        font-size: 1.6em;
+        text-indent: -999em;
+        display: block;
+
+        @include mq("tablet-wide") {
+            display: none;
+        }
+
+        &--open {
+            height: 0;
+            width: 0.75em;
+            padding-top: 0.125em;
+            border-top: 0.375em double $menu-background;
+            border-bottom: 0.125em solid $menu-background;
+            vertical-align: middle;
+            margin: 0.5em;
+            margin-right: 2em;
+        }
+    }
+}

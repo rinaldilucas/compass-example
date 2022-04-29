@@ -1,0 +1,79 @@
+@import "./props.scss";
+@import "./mixins";
+@import "compass/css3";
+
+html {
+    height: 100%;
+    transition: all 0.3s ease 0s;
+    scroll-behavior: smooth;
+
+    @include mq("tablet-wide") {
+        font-size: 1.125em;
+    }
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto Light";
+    line-height: 1.4;
+}
+
+.button {
+    color: $primary-color-text;
+    background-color: $accent-color-text;
+    @include box-shadow($accent-color-text 0 2px 6.65px 0.35px);
+    padding: 0.4em 3em 0.4em 3em;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+
+    &:hover {
+        background-color: $accent-color-text;
+        @include box-shadow($accent-color-text 0 15px 20px 0.1px);
+        transform: translateY(-2px);
+    }
+}
+
+.button--alt {
+    color: $accent-color-text;
+    background-color: $primary-color-text;
+
+    &:hover {
+        @include box-shadow($primary-color-text 0 15px 20px 0.1px);
+        background-color: $primary-color-text;
+    }
+}
+
+.active-menu {
+    &:after {
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.4);
+    }
+}
+
+a {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: $primary-color-text;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    border-radius: 99px;
+    height: 30px;
+    background-color: $background-color;
+}

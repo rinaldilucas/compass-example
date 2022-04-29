@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Beautiful Heart";
+    src: url("../../fonts/Beautiful-Heart.ttf");
+}
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url("../../fonts/Roboto-Light.ttf");
+}
+
+@import "./core/props";
+@import "./core/normalize";
+@import "./core/base";
+
+@import "./components/loader";
+@import "./components/header";
+
+@import "./home/highlight";
+@import "./home/products";
+@import "./home/banners";
