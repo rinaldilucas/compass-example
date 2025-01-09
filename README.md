@@ -15,7 +15,7 @@
   <h3 align="center">Compass example</h3>
 
   <p align="center">
-    A simple example using SASS with compass, yarn and gulp <br>to jumpstart your studies or start your business.
+    A simple example using SASS with compass, yarn, and gulp <br>to jumpstart your studies or start your business.
     <br />
     <br />
     <a href="https://github.com/rinaldilucas/compass-example"><strong>Explore the docs »</strong></a>
@@ -59,7 +59,7 @@
   [![Project Screenshot][project-screenshot]](https://rinaldilucas.github.io/compass-example/)
 </div>
 
-A little study project created to help people who wants to know how a project with compass, gulp and yarn works. If this project helped you in any way, don't hesitate to leave a star!
+A little study project was created to help people who want to know how a project with compass, gulp, and yarn works. If this project helped you in any way, don't hesitate to leave a star!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -134,7 +134,7 @@ _Below is an example of how you can run the project._
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
@@ -176,7 +176,7 @@ Project Link: [https://github.com/rinaldilucas/compass-example](https://github.c
 ## Donations
 
 If you feel that this project has helped you in any way, whether it's attracting clients or teaching you about the technologies used, feel free to make a donation.
-It helps me a lot to continue developing open source codes.
+It helps me a lot to continue developing open-source codes.
 
 -   Metamask (USDT):
     ```sh
